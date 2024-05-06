@@ -48,7 +48,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Cache node modules
+      - name: Cache node modules (resuse cached modules)
         id: cache-nodemodules
         uses: actions/cache@v2
         env:
